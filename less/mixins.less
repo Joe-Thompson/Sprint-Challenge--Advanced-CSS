@@ -1,1 +1,25 @@
 // Mixins Here
+
+.navDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @wild-sand;
+  color: @river-bend;
+  border-bottom: 1px solid @sea-shell;
+  height: 100px;
+}
+
+.btnDisplay(@height, @width, @bg, @textColor, @radius, @family, @size) {
+  height: @height;
+  width: @width;
+  background-color: @bg;
+  color: @textColor;
+  border-radius: @radius;
+  font-family: @family;
+  font-size: @size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

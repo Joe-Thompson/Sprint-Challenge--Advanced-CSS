@@ -1,17 +1,18 @@
 // Home Content
 
 .home {
-
   .intro {
+    img {
+      border-radius: 0.5rem;
+    }
 
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -57,14 +58,24 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn button {
+        .btnDisplay(3.5rem, 10rem, black, white, 0.5rem, "Russo One", 1.5rem);
       }
+    }
+  }
+  button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+     button:hover {
+      background-color: white;
+      color: black;
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +83,4 @@
       }
     }
   }
-}// home
+} // home
