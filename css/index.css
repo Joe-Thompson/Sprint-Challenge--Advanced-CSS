@@ -207,6 +207,7 @@ footer {
   align-items: center;
 }
 .home .intro img {
+  width: 100%;
   border-radius: 0.5rem;
 }
 .home .intro h2 {
@@ -278,7 +279,7 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn button {
+.home .walk .btn button {
   height: 3.5rem;
   width: 10rem;
   background-color: black;
@@ -291,18 +292,14 @@ footer {
   justify-content: center;
   text-align: center;
 }
-@media (max-width: 500px) {
-  .home .walk .walk-text .btn button {
-    width: 100%;
-  }
-}
-.home button:hover {
+.home .walk .btn button:hover {
   background-color: white;
   color: black;
 }
-.home button {
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+@media (max-width: 500px) {
+  .home .walk .btn button {
+    width: 100%;
+  }
 }
 .home .walk-img {
   width: 46%;
